@@ -33,7 +33,7 @@ docker-compose up -d
 ```
 
 3. Truy cập ứng dụng:
-- Frontend: http://localhost:3000
+- Frontend: http://localhost (hoặc http://localhost:80)
 - Backend API: http://localhost:5000
 
 ### Cách 2: Chạy local (Development)
@@ -83,7 +83,8 @@ npm start
 
 ## Lưu ý
 
-- Đảm bảo port 3000, 5000, và 5432 không bị chiếm dụng
+- Đảm bảo port 80, 5000, và 5432 không bị chiếm dụng
+- Port 80 yêu cầu quyền root hoặc sudo để chạy Docker
 - Thay đổi JWT_SECRET trong production
 - Thay đổi mật khẩu database trong production
 

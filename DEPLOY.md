@@ -43,7 +43,7 @@ docker-compose ps
 ```
 
 6. **Truy cập ứng dụng:**
-- Frontend: http://your-server-ip:3000
+- Frontend: http://your-server-ip (hoặc http://your-server-ip:80)
 - Backend API: http://your-server-ip:5000
 
 ### Dừng services
@@ -63,7 +63,8 @@ docker-compose up -d --build
 
 ## Lưu ý
 
-- Đảm bảo các port 3000, 5000, và 5432 không bị chiếm dụng
+- Đảm bảo các port 80, 5000, và 5432 không bị chiếm dụng
+- Port 80 yêu cầu quyền root hoặc sudo để chạy Docker (hoặc cấu hình Docker để chạy không cần root)
 - Nếu cần thay đổi port, sửa trong file `docker-compose.yml`
 - Để thay đổi mật khẩu database hoặc JWT secret, sửa trong `docker-compose.yml` hoặc tạo file `.env`
 
